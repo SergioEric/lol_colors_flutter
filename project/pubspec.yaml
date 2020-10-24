@@ -6,7 +6,7 @@ description: Flutter package for lolcolors page, based on web design rankings co
 version: 0.0.3
 maintainer: Sergio Eric (@sergioemr)
 homepage: https://www.webdesignrankings.com/resources/lolcolors/
-repository: https://github.com/SergioEric/lol_colors_flutter/tree/master/packages/Colors
+repository: https://github.com/SergioEric/lol_colors_flutter/tree/master/project
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

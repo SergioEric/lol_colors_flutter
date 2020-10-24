@@ -32,13 +32,13 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            color: Colors.blue,
+            color: LolColors.c1070_3,
           ),
           Container(
             height: 150,
             width: 150,
             decoration: BoxDecoration(
-              color: LolColors.c2209_3,
+              color: LolColors.c1070_3,
             ),
           ),
           Container(color: LolColors.c4714_1,)
