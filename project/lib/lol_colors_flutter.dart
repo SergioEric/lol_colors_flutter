@@ -37,9 +37,9 @@ import 'package:flutter/material.dart';
 /// ```
 /// ## Lol Color List
 /// .
-/// ![](https://a.storyblok.com/f/80096/369x173/8b532f3c81/lol_colors_bg.png)
-/// ![](https://a.storyblok.com/f/80096/369x173/8b532f3c81/lol_colors_bg.png)
-/// ![](https://a.storyblok.com/f/80096/369x173/8b532f3c81/lol_colors_bg.png)
+/// ![List 1](https://raw.githubusercontent.com/SergioEric/lol_colors_flutter/master/resources/list-lol-colors/%20lol_colors_list_1.png)
+/// ![List 2](https://raw.githubusercontent.com/SergioEric/lol_colors_flutter/master/resources/list-lol-colors/%20lol_colors_list_2.png)
+/// ![List 3](https://raw.githubusercontent.com/SergioEric/lol_colors_flutter/master/resources/list-lol-colors/%20lol_colors_list_3.png)
 ///
 class LolColors {
   // This class is not meant to be instantiated or extended.
