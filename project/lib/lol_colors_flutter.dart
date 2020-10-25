@@ -52,7 +52,7 @@ class LolColors {
     #519D9E
     #D1B6E1   
   */
-  static const List<Color> colors_4714 = [
+  static const List<MaterialColor> colors_4714 = [
     c4714_1,
     c4714_2,
     c4714_3,
@@ -141,7 +141,7 @@ class LolColors {
     #CE6D39
     #000000   
   */
-  static const List<Color> colors_2209 = [
+  static const List<MaterialColor> colors_2209 = [
     c2209_1,
     c2209_2,
     c2209_3,
@@ -230,7 +230,7 @@ class LolColors {
     #E53A40
     #090707   
   */
-  static const List<Color> colors_2877 = [
+  static const List<MaterialColor> colors_2877 = [
     c2877_1,
     c2877_2,
     c2877_3,
@@ -319,7 +319,7 @@ class LolColors {
     #FFFFF3
     #566270   
   */
-  static const List<Color> colors_2046 = [
+  static const List<MaterialColor> colors_2046 = [
     c2046_1,
     c2046_2,
     c2046_3,
@@ -408,7 +408,7 @@ class LolColors {
     #383A3F
     #1F2124   
   */
-  static const List<Color> colors_1477 = [
+  static const List<MaterialColor> colors_1477 = [
     c1477_1,
     c1477_2,
     c1477_3,
@@ -497,7 +497,7 @@ class LolColors {
     #77AF9C
     #285943   
   */
-  static const List<Color> colors_1369 = [
+  static const List<MaterialColor> colors_1369 = [
     c1369_1,
     c1369_2,
     c1369_3,
@@ -586,7 +586,7 @@ class LolColors {
     #2E294E
     #011638   
   */
-  static const List<Color> colors_1070 = [
+  static const List<MaterialColor> colors_1070 = [
     c1070_1,
     c1070_2,
     c1070_3,
@@ -675,7 +675,7 @@ class LolColors {
     #EC7357
     #754F44   
   */
-  static const List<Color> colors_1294 = [
+  static const List<MaterialColor> colors_1294 = [
     c1294_1,
     c1294_2,
     c1294_3,
@@ -756,5 +756,94 @@ class LolColors {
     700: Color(0xffface00),
     800: Color(0xfffbb500),
     900: Color(0xfffc8a00),
+  });
+  //* Color ♥️ 1278
+  /* Hex
+    #C5E99B
+    #8FBC94
+    #548687
+    #56445D   
+  */
+  static const List<MaterialColor> colors_1278 = [
+    c1278_1,
+    c1278_2,
+    c1278_3,
+    c1278_4,
+  ];
+  static const int _color_1278_1 = 0xFF56445D;
+  static const int _color_1278_2 = 0xFF548687;
+  static const int _color_1278_3 = 0xFF8FBC94;
+  static const int _color_1278_4 = 0XFFC5E99B;
+
+  /// ### c1278_1
+  /// primary shade **800**
+  ///
+  /// ![#56445D](https://via.placeholder.com/150x50/56445D/FFFFFF/?text=1278-1)
+  static const MaterialColor c1278_1 =
+      MaterialColor(_color_1278_1, <int, Color>{
+    050: Color(0xfffff4ff),
+    100: Color(0xffffefff),
+    200: Color(0xffffeaff),
+    300: Color(0xfff7e1ff),
+    400: Color(0xffd5bfdc),
+    500: Color(0xffb6a1be),
+    600: Color(0xff8b7893),
+    700: Color(0xff76637e),
+    800: Color(_color_1278_1),
+    900: Color(0xff332239),
+  });
+
+  /// ### c1278_2
+  /// primary shade **800**
+  ///
+  /// ![#548687](https://via.placeholder.com/150x50/548687/FFFFFF/?text=1278-2)
+  static const MaterialColor c1278_2 =
+      MaterialColor(_color_1278_2, <int, Color>{
+    050: Color(0xffe4f8f8),
+    100: Color(0xffbdeded),
+    200: Color(0xff98e1e2),
+    300: Color(0xff7ad4d7),
+    400: Color(0xff6dcacf),
+    500: Color(0xff69c1c8),
+    600: Color(0xff62b0b6),
+    700: Color(0xff5b9b9d),
+    800: Color(_color_1278_2),
+    900: Color(0xff486260),
+  });
+
+  /// ### c1278_3
+  /// primary shade **200**
+  ///
+  /// ![#8FBC94](https://via.placeholder.com/150x50/8FBC94/FFFFFF/?text=1278-3)
+  static const MaterialColor c1278_3 =
+      MaterialColor(_color_1278_3, <int, Color>{
+    050: Color(0xffe2efe4),
+    100: Color(0xffbad7bd),
+    200: Color(_color_1278_3),
+    300: Color(0xff63a46b),
+    400: Color(0xff41934e),
+    500: Color(0xff178230),
+    600: Color(0xff0e7529),
+    700: Color(0xff01651f),
+    800: Color(0xff005516),
+    900: Color(0xff003803),
+  });
+
+  /// ### c1278_4
+  /// primary shade **200**
+  ///
+  /// ![#C5E99B](https://via.placeholder.com/150x50/C5E99B/131313/?text=1278-4)
+  static const MaterialColor c1278_4 =
+      MaterialColor(_color_1278_4, <int, Color>{
+    050: Color(0xfff1fae7),
+    100: Color(0xffdcf2c3),
+    200: Color(_color_1278_4),
+    300: Color(0xffaddf74),
+    400: Color(0xff9cd757),
+    500: Color(0xff8bcf3a),
+    600: Color(0xff7cbf32),
+    700: Color(0xff66ab28),
+    800: Color(0xff529620),
+    900: Color(0xff2c740e),
   });
 }
