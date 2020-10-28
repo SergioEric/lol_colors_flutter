@@ -24,7 +24,7 @@ class DropColor extends StatelessWidget {
   Widget build(BuildContext context) {
     //TODO: replace Size/Ratio with enum types    
     if(size != null){
-      print(size.aspectRatio);
+      // print(size.aspectRatio);
       if(size.aspectRatio != 0.75){
         return Expanded(
           child: Column(

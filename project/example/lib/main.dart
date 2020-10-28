@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lol_colors_flutter/lol_colors_flutter.dart';
-
+import 'package:lol_colors_flutter/color_extension.dart';
 import 'drop.widget.dart';
 
 void main() {
@@ -25,10 +25,14 @@ class MyApp extends StatelessWidget {
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    print(LolColors.c1278_1[700].computeLuminance());
+    print(values(LolColors.c1278_1[700]));
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        title: Text("LOL COLORS"),
+        title: Text("Package Name", style: TextStyle(
+          color: Theme.of(context).primaryColor.isDark() ? Colors.black : Colors.white
+        ),),
         // backgroundColor: LolColors.color_4714_1[600],
       ),
       body: Column(
@@ -39,6 +43,7 @@ class HomePage extends StatelessWidget {
           Container(
             height: 150,
             width: 150,
+            child: Center(child: Text("😂", style: TextStyle(color: Colors.green,fontSize: 50),)),
             decoration: BoxDecoration(
               color: LolColors.c1070_3,
             ),
@@ -54,10 +59,40 @@ class HomePage extends StatelessWidget {
                 DropColor(colors: LolColors.colors_1477,size: Size(18.75,25), ),
                 DropColor(colors: LolColors.colors_1294,size: Size(18.75,25), ),
                 DropColor(colors: LolColors.colors_2209,size: Size(18.75,25), ),
-                DropColor(colors: LolColors.colors_2209,size: Size(18.75,25), ),
-                DropColor(colors: LolColors.colors_2209,size: Size(18.75,25), ),
-                DropColor(colors: LolColors.colors_2209,size: Size(18.75,25), ),
+                DropColor(colors: LolColors.colors_4714,size: Size(18.75,25), ),
+                DropColor(colors: LolColors.colors_2877,size: Size(18.75,25), ),
+                DropColor(colors: LolColors.colors_2046,size: Size(18.75,25), ),
               ],
+            ),
+          ),
+          Container(
+            width: 250,
+            height: 50,
+            color: LolColors.c2877_3[700],
+            child: Center(
+              child: Text("Text inside", style: TextStyle(
+                color: LolColors.c2877_3[700].isDark() ? Colors.black : Colors.white
+              ),),
+            ),
+          ),
+          Container(
+            width: 250,
+            height: 50,
+            color: LolColors.c2877_3[700].negate(),
+            child: Center(
+              child: Text("Text inside", style: TextStyle(
+                color: LolColors.c2877_3[700].negate().isDark() ? Colors.black : Colors.white
+              ),),
+            ),
+          ),
+          Container(
+            width: 250,
+            height: 50,
+            color: Colors.black.negate(),
+            child: Center(
+              child: Text("Text inside", style: TextStyle(
+                color: Colors.black.negate().isDark() ? Colors.black : Colors.white
+              ),),
             ),
           ),
         ],
@@ -72,3 +107,14 @@ final List<Color> colors = [
   Color(0xff000cc0),
   Color(0xffcceefe),
 ];
+
+String values(Color color){
+  // color.opacity;
+  return 
+  '''
+    toString()    : ${color.toString()},
+    color.value   : ${color.value},
+    color.opacity : ${color.opacity},
+    toRBG         : ${color.toRBG()}
+   ''';
+}

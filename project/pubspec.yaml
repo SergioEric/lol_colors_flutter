@@ -3,7 +3,7 @@
 # Color Variations for accessibility made with https://material.io/design/color/the-color-system.html#tools-for-picking-colors
 name: lol_colors_flutter
 description: Flutter package for lolcolors page, based on web design rankings colors
-version: 0.0.3
+version: 0.1.0
 maintainer: Sergio Eric (@sergioemr)
 homepage: https://www.webdesignrankings.com/resources/lolcolors/
 repository: https://github.com/SergioEric/lol_colors_flutter/tree/master/project
