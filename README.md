@@ -1,4 +1,4 @@
-Readme on **Project** [directory](project/readme.md)
+Readme on **Project** [directory](project/)
 
 
 
