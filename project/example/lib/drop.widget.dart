@@ -1,90 +1,101 @@
 import 'package:flutter/material.dart';
 
 /// DropColor widget draw a drop with the color pass, 
-/// accept a **Size** that can be optional
+/// accept a **DropRatio** that can be optional
 /// 
-/// Size by default is Size(150,200)
+/// Size by default is DropRatio.x4 = Size(41.25,55)
 class DropColor extends StatelessWidget {
   const DropColor({
     Key key,
     this.colors,
-    this.size
+    this.size,
+    this.axis = Axis.vertical
   }) :
    assert(colors != null, "Color must be not-null, DropColor"),
    assert(colors.length == 4, "Colors length must be equal to 4"),
-  //  assert(colors is List<MaterialColor>, "Colors must be Material Colors"),
    super(key: key);
 
   final List<MaterialColor> colors;
-  final Size size;
+  final DropRatio size;
+  final Axis  axis;
 
   static const double defaultRatioHeight = 50.0;
   static const double defaultRatioWidth = 37.5;
   @override
   Widget build(BuildContext context) {
-    //TODO: replace Size/Ratio with enum types    
-    if(size != null){
-      // print(size.aspectRatio);
-      if(size.aspectRatio != 0.75){
-        return Expanded(
-          child: Column(
-            children: [
-              Text("Aspect Ratio must be 0.75, ex:"),
-              Text("Size(300,400)  = ratio = 0.75"),
-              Text("Size(150,200)  = ratio = 0.75"),
-              Text("Size(75,100)   = ratio = 0.75"),
-              Text("Size(37.5,50)  = ratio = 0.75"),
-              Text("Size(18.75,25) = ratio = 0.75"),
-            ],
-          )
-        );
-      }else {
-        return Expanded(
-        child: Stack(
-          children: [
-              for(var index = colors.length-1; index >= 0; index--)...[
-                Positioned(
-                  top: index * (size.height - size.height/2.5),
-                  child: CustomPaint(
-                    painter: _DropColorPainter(colors.reversed.toList()[index]),
-                    size: size
-                  ),
-                )
-              ]
-            ],
-        ),
-      );
-      }
-    }
-
-    return Expanded(
-      child: Stack(
-        children: [
+    return Stack(
+      alignment: Alignment.center,
+      children: [
           for(var index = colors.length-1; index >= 0; index--)...[
             Positioned(
-                top: index * (defaultRatioHeight - defaultRatioHeight/2.5),
-                child: CustomPaint(
-                  painter: _DropColorPainter(colors.reversed.toList()[index]),
-                  size: Size(defaultRatioWidth,defaultRatioHeight)
-                ),
-              )
+              left: axis == Axis.horizontal ? index * (size.value.width - size.value.width/2.5) : null,
+              top:axis == Axis.vertical ? index * (size.value.height - size.value.height/2.5) : null,
+              child: CustomPaint(
+                painter: _DropColorPainter(colors.reversed.toList()[index]),
+                size: size.value
+              ),
+            )
           ]
         ],
-      ),
     );
   }
 }
-/**
- * itemCount: colors.length,
-            itemBuilder: (_, index) 
- * Positioned(
-                top: index * 10.0,
-                child: CustomPaint(
-                  painter: _DropColorPainter(colors[index]),
-                  size: Size(37.5,50)
-                ),
-              )
- */
+/// Drop size must be *3/4* aspect ratio, for keeping drop proportions
+/// 
+/// **x1** = Size(18.75,25), **x2** = Size(37.5,50)
+/// 
+/// **x3** = Size(75,100), **x4** = Size(150,200), 
+///
+/// **x5** = Size(300,400), *default* : x2
+enum DropRatio{
+  x1,
+  x2,
+  x3,
+  x4,
+  x5
+}
+double calc(x){return x * (3/4);}
+/// return **Size** of *enum DropRatio*
+/// by default return **DropRatio.x4**
+/// 
+/// double calc(x){return x * (3/4)} where x is Size(calc(x), x) keeping 3/4 ratio
+/// 
+/// ```
+///   x1 -> x = 25 -> Size(calc(25),25); 
+///   x2 -> x = 35 -> Size(calc(35),35);
+///   x3 -> x = 45 -> Size(calc(45),45);
+///   x4 -> x = 55 -> Size(calc(55),55);
+///   x5 -> x = 65 -> Size(calc(65),65);
+/// ```
+extension DropRatioSize on DropRatio{
+  Size get value {
+    switch(this){
+      case DropRatio.x1:
+        return Size(calc(25),25);
+        // return Size(18.75,25);
+        break;
+      case DropRatio.x2:
+        return Size(calc(35),35);
+        // return Size(26.25,35);
+        break;
+      case DropRatio.x3:
+        return Size(calc(45),45);
+        // return Size(33.75,45);
+        break;
+      case DropRatio.x4:
+        return Size(calc(55),55);
+        // return Size(41.25,55);
+        break;
+      case DropRatio.x5:
+        return Size(calc(65),65);
+        // return Size(48.75,65);
+        break;
+      default:
+        return DropRatio.x4.value;
+        break;
+    }
+  }
+}
 
 class _DropColorPainter extends CustomPainter{
 

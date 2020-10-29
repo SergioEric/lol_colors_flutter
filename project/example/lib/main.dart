@@ -1,9 +1,16 @@
+import 'package:example/pages/all.lol.colors.page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:lol_colors_flutter/lol_colors_flutter.dart';
 import 'package:lol_colors_flutter/color_extension.dart';
 import 'drop.widget.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(
+    SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent
+    )
+  );
   runApp(MyApp());
 }
 
@@ -25,8 +32,8 @@ class MyApp extends StatelessWidget {
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    print(LolColors.c1278_1[700].computeLuminance());
-    print(values(LolColors.c1278_1[700]));
+    // print(LolColors.c1278_1[700].computeLuminance());
+    // print(values(LolColors.c1278_1[700]));
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
@@ -49,22 +56,40 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Container(color: LolColors.c4714_1,),
-          Expanded(
-            child: Row(
-              children: [
-                DropColor(colors: LolColors.colors_1070,size: Size(18.75,25), ),
-                DropColor(colors: LolColors.colors_1278,size: Size(18.75,25), ),
-                DropColor(colors: LolColors.colors_1294,size: Size(18.75,25), ),
-                DropColor(colors: LolColors.colors_1369,size: Size(18.75,25), ),
-                DropColor(colors: LolColors.colors_1477,size: Size(18.75,25), ),
-                DropColor(colors: LolColors.colors_1294,size: Size(18.75,25), ),
-                DropColor(colors: LolColors.colors_2209,size: Size(18.75,25), ),
-                DropColor(colors: LolColors.colors_4714,size: Size(18.75,25), ),
-                DropColor(colors: LolColors.colors_2877,size: Size(18.75,25), ),
-                DropColor(colors: LolColors.colors_2046,size: Size(18.75,25), ),
-              ],
+          // Expanded(child: Container(),),
+          Container(
+            height: 250,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+                children: all_lol_colors.keys.toList().map((e) 
+                => Container(
+                  // height: 250,
+                  width: 50,
+                  child: DropColor(colors: all_lol_colors[e], size: DropRatio.x2, )),)
+                .toList(),
             ),
           ),
+          TextButton.icon(
+            onPressed: (){
+              Navigator.of(context).push(MaterialPageRoute(
+                builder: (_)=>AllLolColorPage()
+              ));
+            },
+            label: Text("all colors"),
+            icon: Icon(Icons.collections),
+            style: TextButton.styleFrom(
+              primary: LolColors.c1294_3
+            ),
+          ),
+          // Expanded(
+          //   child: ListView(
+          //     scrollDirection: Axis.vertical,
+          //     children: all_lol_colors.keys.toList().map((e) 
+          //       => DropColor(colors: all_lol_colors[e],size: Size(18.75,25), ),)
+          //       .toList()
+          //   ),
+          // ),
+          // DropColor(colors: all_lol_colors["4714"],size: Size(18.75,25), ),
           Container(
             width: 250,
             height: 50,
