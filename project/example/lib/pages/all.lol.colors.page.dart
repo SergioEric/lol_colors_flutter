@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lol_colors_flutter/lol_colors_flutter.dart';
 
 import '../drop.widget.dart';
+import 'color.variation.page.dart';
 
 final bgColor = Colors.white;
 class AllLolColorPage extends StatelessWidget {
@@ -31,18 +32,21 @@ class AllLolColorPage extends StatelessWidget {
               childAspectRatio: 3/4,
               mainAxisSpacing: 5,
 
-              children:all_lol_colors.keys.toList().map((e) 
+              children:all_lol_colors.keys.toList().map((key) 
                 => Stack(
                   alignment: Alignment.center,
                   children: [
-                    DropColor(
-                        colors: all_lol_colors[e],
-                        size: DropRatio.x4,
-                        // axis: Axis.horizontal,
-                        ),
+                    GestureDetector(
+                      onTap: ()=>goToColorVariantions(context,key),
+                      child: DropColor(
+                          colors: all_lol_colors[key],
+                          size: DropRatio.x4,
+                          // axis: Axis.horizontal,
+                          ),
+                    ),
                     Positioned(
                       bottom: 0,
-                      child: Text(e)
+                      child: Text(key)
                     )
                   ],
                 ),)
@@ -59,8 +63,12 @@ class AllLolColorPage extends StatelessWidget {
       )
    );
   }
+
+  void goToColorVariantions(BuildContext context, String key){
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (_) 
+        => ColorVariationPage(colors: all_lol_colors[key], numberColor: key,)
+      )
+    );
+  }
 }
-// all_lol_colors.keys.toList().map((e) 
-//   => Container(
-//     child: DropColor(colors: all_lol_colors[e], size: DropRatio.x3,)),)
-//   .toList()

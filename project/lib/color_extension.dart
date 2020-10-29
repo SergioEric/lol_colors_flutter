@@ -51,4 +51,7 @@ extension ColorExtension on Color {
   String toRBG() {
     return "rgb(${this.red},${this.green},${this.blue})";
   }
+
+  //TODO create a function that return the color primary value shade
+  //TODO create a function that evaluate the best level of a color between white and black
 }

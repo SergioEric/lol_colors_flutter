@@ -1362,6 +1362,265 @@ class LolColors {
     800: Color(0xff2c6663),
     900: Color(0xff264a46),
   });
+  //* Color ♥️ 872
+  /* Hex
+    #67D5B5
+    #EE7785
+    #C89EC4
+    #84B1ED   
+  */
+  static const List<MaterialColor> colors_872 = [
+    c872_1,
+    c872_2,
+    c872_3,
+    c872_4,
+  ];
+  static const int _color_872_1 = 0xFF84B1ED;
+  static const int _color_872_2 = 0xFC89EC4F;
+  static const int _color_872_3 = 0xFFEE7785;
+  static const int _color_872_4 = 0XFF67D5B5;
+
+  /// ### c872_1
+  /// primary shade **300**
+  ///
+  /// ![#84B1ED](https://via.placeholder.com/150x50/84B1ED/131313/?text=872-1)
+  static const MaterialColor c872_1 =
+      MaterialColor(_color_872_1, <int, Color>{
+    050: Color(0xffe6f1fc),
+    100: Color(0xffc4dcf8),
+    200: Color(0xffa2c7f4),
+    300: Color(_color_872_1),
+    400: Color(0xff72a1e9),
+    500: Color(0xff6591e5),
+    600: Color(0xff6084d7),
+    700: Color(0xff5872c3),
+    800: Color(0xff5161b1),
+    900: Color(0xff444391),
+  });
+  /// ### c872_2
+  /// primary shade **300**
+  ///
+  /// ![#C89EC4](https://via.placeholder.com/150x50/C89EC4/131313/?text=872-2)
+  static const MaterialColor c872_2 =
+      MaterialColor(_color_872_2, <int, Color>{
+    050: Color(0xfff1e7f0),
+    100: Color(0xffddc4db),
+    200: Color(_color_872_2),
+    300: Color(0xffb578af),
+    400: Color(0xffaa5aa3),
+    500: Color(0xff9e4097),
+    600: Color(0xff913b91),
+    700: Color(0xff813488),
+    800: Color(0xff732e80),
+    900: Color(0xff592372),
+  });
+  /// ### c872_3
+  /// primary shade **300**
+  ///
+  /// ![#EE7785](https://via.placeholder.com/150x50/EE7785/131313/?text=872-3)
+  static const MaterialColor c872_3 =
+      MaterialColor(_color_872_3, <int, Color>{
+    050: Color(0xffffecf1),
+    100: Color(0xffffd0da),
+    200: Color(0xfff59ea7),
+    300: Color(_color_872_3),
+    400: Color(0xfffc5467),
+    500: Color(0xffff3f4f),
+    600: Color(0xfff5374e),
+    700: Color(0xffe22d47),
+    800: Color(0xffd5263f),
+    900: Color(0xffc61733),
+  });
+  /// ### c872_4
+  /// primary shade **200**
+  ///
+  /// ![#67D5B5](https://via.placeholder.com/150x50/67D5B5/131313/?text=872-4)
+  static const MaterialColor c872_4 =
+      MaterialColor(_color_872_4, <int, Color>{
+    050: Color(0xffdbf5ee),
+    100: Color(0xffa7e5d3),
+    200: Color(_color_872_4),
+    300: Color(0xff0fc299),
+    400: Color(0xff00b286),
+    500: Color(0xff00a274),
+    600: Color(0xff009567),
+    700: Color(0xff008458),
+    800: Color(0xff00744b),
+    900: Color(0xff005730),
+  });
+  //* Color ♥️ 827
+  /* Hex
+    #F16B6F
+    #C5C6B6
+    #AACD6E
+    #3C3530   
+  */
+  static const List<MaterialColor> colors_827 = [
+    c827_1,
+    c827_2,
+    c827_3,
+    c827_4,
+  ];
+  static const int _color_827_1 = 0xFF3C3530;
+  static const int _color_827_2 = 0xFCAACD6E;
+  static const int _color_827_3 = 0xFFC5C6B6;
+  static const int _color_827_4 = 0XFFF16B6F;
+
+  /// ### c827_1
+  /// primary shade **800**
+  ///
+  /// ![#3C3530](https://via.placeholder.com/150x50/3C3530/FFFFFF/?text=827-1)
+  static const MaterialColor c827_1 =
+      MaterialColor(_color_827_1, <int, Color>{
+    050: Color(0xfffff6f0),
+    100: Color(0xfff8eee8),
+    200: Color(0xffede4dd),
+    300: Color(0xffdcd3cc),
+    400: Color(0xffb7aea8),
+    500: Color(0xff978e88),
+    600: Color(0xff6e6661),
+    700: Color(0xff5b534e),
+    800: Color(_color_827_1),
+    900: Color(0xff1c1510),
+  });
+  /// ### c827_2
+  /// primary shade **400**
+  ///
+  /// ![#AACD6E](https://via.placeholder.com/150x50/AACD6E/131313/?text=827-2)
+  static const MaterialColor c827_2 =
+      MaterialColor(_color_827_2, <int, Color>{
+    050: Color(0xfff3f8ea),
+    100: Color(0xffe1edcb),
+    200: Color(0xffcde2aa),
+    300: Color(0xffbad688),
+    400: Color(_color_827_2),
+    500: Color(0xff9cc455),
+    600: Color(0xff8cb44d),
+    700: Color(0xff78a043),
+    800: Color(0xff658c3a),
+    900: Color(0xff446a28),
+  });
+  /// ### c827_3
+  /// primary shade **400**
+  ///
+  /// ![#C5C6B6](https://via.placeholder.com/150x50/C5C6B6/131313/?text=827-3)
+  static const MaterialColor c827_3 =
+      MaterialColor(_color_827_3, <int, Color>{
+    050: Color(0xfffcfdec),
+    100: Color(0xfff7f8e7),
+    200: Color(0xfff2f3e2),
+    300: Color(0xffe7e8d8),
+    400: Color(_color_827_3),
+    500: Color(0xffa7a898),
+    600: Color(0xff7d7e6f),
+    700: Color(0xff686a5b),
+    800: Color(0xff494a3d),
+    900: Color(0xff27281c),
+  });
+  /// ### c827_4
+  /// primary shade **300**
+  ///
+  /// ![#F16B6F](https://via.placeholder.com/150x50/F16B6F/131313/?text=827-3)
+  static const MaterialColor c827_4 =
+      MaterialColor(_color_827_4, <int, Color>{
+    050: Color(0xffffeaee),
+    100: Color(0xffffcbd2),
+    200: Color(0xfff89698),
+    300: Color(_color_827_4),
+    400: Color(0xfffc434a),
+    500: Color(0xffff2e2f),
+    600: Color(0xfff2202f),
+    700: Color(0xffdf1029),
+    800: Color(0xffd20122),
+    900: Color(0xffc30015),
+  });
+
+  //* Color ♥️ 1134
+  /* Hex
+    #77AAAD
+    #6E7783
+    #D8E6E7
+    #9DC3C1   
+  */
+  static const List<MaterialColor> colors_1134 = [
+    c1134_1,
+    c1134_2,
+    c1134_3,
+    c1134_4,
+  ];
+  static const int _color_1134_1 = 0xFF9DC3C1;
+  static const int _color_1134_2 = 0xFCD8E6E7;
+  static const int _color_1134_3 = 0xFF6E7783;
+  static const int _color_1134_4 = 0XFF77AAAD;
+
+  /// ### c1134_1
+  /// primary shade **100**
+  ///
+  /// ![#9DC3C1](https://via.placeholder.com/150x50/9DC3C1/131313/?text=1134-1)
+  static const MaterialColor c1134_1 =
+      MaterialColor(_color_1134_1, <int, Color>{
+    050: Color(0xffd7e6e6),
+    100: Color(_color_1134_1),
+    200: Color(0xff5b9d9a),
+    300: Color(0xff007974),
+    400: Color(0xff00615b),
+    500: Color(0xff004943),
+    600: Color(0xff004039),
+    700: Color(0xff00342c),
+    800: Color(0xff00261f),
+    900: Color(0xff001100),
+  });
+  /// ### c1134_2
+  /// primary shade **50**
+  ///
+  /// ![#D8E6E7](https://via.placeholder.com/150x50/D8E6E7/131313/?text=1134-2)
+  static const MaterialColor c1134_2 =
+      MaterialColor(_color_1134_2, <int, Color>{
+    050: Color(_color_1134_2),
+    100: Color(0xff9bc3c4),
+    200: Color(0xff559d9e),
+    300: Color(0xff00787a),
+    400: Color(0xff006162),
+    500: Color(0xff004949),
+    600: Color(0xff003f3f),
+    700: Color(0xff003331),
+    800: Color(0xff002623),
+    900: Color(0xff001105),
+  });
+  /// ### c1134_3
+  /// primary shade **600**
+  ///
+  /// ![#6E7783](https://via.placeholder.com/150x50/6E7783/FFFFFF/?text=1134-3)
+  static const MaterialColor c1134_3 =
+      MaterialColor(_color_1134_3, <int, Color>{
+    050: Color(0xfff1fbff),
+    100: Color(0xffecf6ff),
+    200: Color(0xffe6f0fd),
+    300: Color(0xffd8e2ef),
+    400: Color(0xffb5bfcc),
+    500: Color(0xff97a0ad),
+    600: Color(_color_1134_3),
+    700: Color(0xff5a636f),
+    800: Color(0xff3b444f),
+    900: Color(0xff1a232c),
+  });
+  /// ### c1134_4
+  /// primary shade **300**
+  ///
+  /// ![#77AAAD](https://via.placeholder.com/150x50/77AAAD/131313/?text=1134-4)
+  static const MaterialColor c1134_4 =
+      MaterialColor(_color_1134_4, <int, Color>{
+    050: Color(0xffe5f0f1),
+    100: Color(0xffbddadc),
+    200: Color(0xff97c2c5),
+    300: Color(_color_1134_4),
+    400: Color(0xff67999a),
+    500: Color(0xff568889),
+    600: Color(0xff507c7c),
+    700: Color(0xff496c6c),
+    800: Color(0xff435d5c),
+    900: Color(0xff344140),
+  });
 }
 
 
@@ -1382,4 +1641,7 @@ final Map<String, List<MaterialColor>> all_lol_colors = {
   "1378" : LolColors.colors_1378,
   "470"  : LolColors.colors_470,
   "585"  : LolColors.colors_585,
+  "872"  : LolColors.colors_872,
+  "827"  : LolColors.colors_827,
+  "1134"  : LolColors.colors_1134,
 };
