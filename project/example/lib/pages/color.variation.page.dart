@@ -47,7 +47,7 @@ class _ColorVariationPageState extends State<ColorVariationPage> {
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 5),
           child: Column(
-            children: widget.colors.map((color) => Column(
+            children: widget.colors.reversed.map((color) => Column(
               children: [
                 BoxColor(color: color,),
                 Text(color.toString()),
