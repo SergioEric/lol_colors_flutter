@@ -32,12 +32,16 @@ Container(
   )
 )
 ```
+## Simple Demo
+
+![demo v1](https://raw.githubusercontent.com/SergioEric/lol_colors_flutter/master/resources/gifs/demo-v1.gif)
 
 
 ## Lol Color List
 .
-![](https://a.storyblok.com/f/80096/369x173/8b532f3c81/lol_colors_bg.png)
+![lol_colors_list_1](https://raw.githubusercontent.com/SergioEric/lol_colors_flutter/master/resources/list-lol-colors/lol_colors_list_1.png)
 
+![lol_colors_list_1](https://raw.githubusercontent.com/SergioEric/lol_colors_flutter/master/resources/list-lol-colors/lol_colors_list_2.png)
 
 
 
